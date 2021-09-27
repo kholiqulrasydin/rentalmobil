@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "merek": "Honda",
+        "tipe": "HRV",
+        "tahun": 2021,
+        "status": "tersedia",
+        "nopol": "L2345LA",
+        "harga": 500000
+    },
+    {
+        "id": 2,
+        "merek": "Mazda",
+        "tipe": "RX8",
+        "tahun": 2021,
+        "status": "tersedia",
+        "nopol": "L2345LA",
+        "harga": 1000000
+    },
+    {
+        "id": 3,
+        "merek": "Honda",
+        "tipe": "HRV",
+        "tahun": 2021,
+        "status": "tersedia",
+        "nopol": "L2345LA",
+        "harga": 500000
+    },
+    {
+        "id": 4,
+        "merek": "Honda",
+        "tipe": "HRV",
+        "tahun": 2021,
+        "status": "tersedia",
+        "nopol": "L2345LA",
+        "harga": 500000
+    }
+]
