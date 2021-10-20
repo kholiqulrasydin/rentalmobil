@@ -7,11 +7,18 @@
         "type": 2
     },
     {
-        "id": 1,
+        "id": 2,
         "nama": "nisa",
-        "username": "nisaamalia",
+        "username": "adminnisaamalia",
         "password": "informatika",
-        "type": 2
+        "type": 1
+    },
+    {
+        "id": 3,
+        "nama": "ani",
+        "username": "adminani",
+        "password": "ani123456789",
+        "type": 1 
     }
 
 
