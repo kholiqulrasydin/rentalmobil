@@ -53,15 +53,29 @@ public class MobilProvider {
         return data;
     }
     
-    public static List<Mobil> getDataMobilById(int id){
+    public static Mobil getDataMobilById(int id){
+        List<Mobil> dataMobil = getDataMobil();
+        Object result = new Object();
+        for(int i = 0; i < dataMobil.size(); i++){
+            Mobil mobil = dataMobil.get(i);
+            if(mobil.id() == id){
+                result = mobil;
+            }
+        }
+        return (Mobil) result;
+    }
+
+    public static List<Mobil> getDataAvailableMobil(){
         List<Mobil> dataMobil = getDataMobil();
         List<Mobil> result = new ArrayList<>();
         for(int i = 0; i < dataMobil.size(); i++){
             Mobil mobil = dataMobil.get(i);
-            if(mobil.id() == id){
+            if(mobil.status().equals("tersedia")){
                 result.add(mobil);
             }
         }
         return result;
     }
+
+    
 }

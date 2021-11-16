@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 package com.kelompok3.rentcar;
-import com.kelompok3.rentcar.models.Mobil;
-import com.kelompok3.rentcar.providers.MobilProvider;
+import com.kelompok3.rentcar.providers.MenuProvider;
+import com.kelompok3.rentcar.services.Penyewaan;
+import com.kelompok3.rentcar.services.Welcome;
 
 
 /**
@@ -18,14 +19,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Mobil mobil = MobilProvider.getDataMobilById(1).get(0);
-        System.out.println("id : "+ mobil.id());
-        System.out.println("merek : "+ mobil.merek());
-        System.out.println("tipe : "+ mobil.tipe());
-        System.out.println("tahun : "+ mobil.tahun());
-        System.out.println("harga sewa: "+ mobil.harga());
-
-
+        // Welcome.mainRun();
+        // Penyewaan.mainRun();
+        // // while(new RunState().getState() == true){
+            MenuProvider menuProvider = new MenuProvider();
+            menuProvider.setMenu();
+            menuProvider.runMenu(0);
+        // // }
     }
     
 }
