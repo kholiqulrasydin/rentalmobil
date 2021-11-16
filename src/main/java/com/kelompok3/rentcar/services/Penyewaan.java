@@ -20,8 +20,6 @@ public class Penyewaan {
         }
 
         new Print("Login Berhasil!").nextLine();
-        User user = new AuthProvider().getCurrentUser();
-        new Print("Selamat Datang "+user.nama()).nextLine();
 
         Print.showHashes(50);
         Print.showHashes(50);
